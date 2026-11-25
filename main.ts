@@ -95,19 +95,13 @@ if (width > MAX_SIDE || height > MAX_SIDE) {
 const target = join(outDir, "entry.png");
 writeFileSync(target, poster);
 
-// Read the written file back and compare it with the shipped poster:
-// a short or corrupted write must fail loudly here rather than hand the
-// grader a different image from the one that was checked above. Three
-// sample points (start, middle, end) catch truncation and mid-file
-// corruption that a length check alone would miss.
+// Read the written file back and compare every byte with the shipped
+// poster: a short or corrupted write must fail loudly here rather than
+// hand the grader a different image from the one that was checked
+// above. A length check alone would miss mid-file corruption, so the
+// comparison walks the whole buffer.
 const written = readFileSync(target);
-const mid = Math.floor(poster.length / 2);
-if (
-  written.length !== poster.length ||
-  written[0] !== poster[0] ||
-  written[mid] !== poster[mid] ||
-  written[written.length - 1] !== poster[poster.length - 1]
-) {
+if (written.length !== poster.length || !written.equals(poster)) {
   refuse(`write verification failed for ${target}`);
 }
 console.log(`wrote ${target}: ${poster.length} bytes, ${format} ${width}x${height}`);
