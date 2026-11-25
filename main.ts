@@ -64,6 +64,14 @@ if (PNG_MAGIC.every((b, i) => poster[i] === b)) {
   format = "PNG";
   width = poster.readUInt32BE(16); // IHDR width
   height = poster.readUInt32BE(20); // IHDR height
+  // A whole PNG ends with the IEND chunk: length 0, the type "IEND"
+  // and its CRC. A file cut short anywhere upstream can still carry a
+  // plausible header, so check the tail before trusting the header.
+  const tail = poster.subarray(poster.length - 12);
+  const IEND = [0x00, 0x00, 0x00, 0x00, 0x49, 0x45, 0x4e, 0x44, 0xae, 0x42, 0x60, 0x82];
+  if (!IEND.every((b, i) => tail[i] === b)) {
+    refuse("PNG is truncated: no IEND chunk at the end");
+  }
 } else if (poster[0] === 0xff && poster[1] === 0xd8) {
   format = "JPEG";
   // A whole JPEG ends with the FFD9 marker; then walk the segments to

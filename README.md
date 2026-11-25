@@ -20,6 +20,8 @@ The program runs offline with the Node 22 standard library only, runs twice in g
 
 Stories are drawn from the full day's reporting of 25 November 2026, cross-checked against the day's wires and same-day reporting: Reuters on the Hormuz mine strikes and the Qatari-mediated offer, AP on the Bangladesh wage decision, the al-Shati strike and the Shenzhou-24 launch, Reuters' Morning Bid and Alliance News on the Asian market rout, The Independent on the Samara refinery strikes, Ships & Ports on the tugboat blacklist, the BBC on the Huawei verdict and the Iranian singer, and ScienceAlert on the visceral-fat sugar.
 
+Verification, before this edition was submitted: the layout script was run twice and produced byte-identical posters both times; `main.ts` was executed against a scratch output directory and its output compared byte-for-byte with the shipped `entry.png`; and every story on the page was checked against a same-day (25 November) report, with items that turned out to be Tuesday's news — the Hamas security chief's killing, the leaked Russian death toll, the Dow's first close above 50,000, the Polish airspace incursion — removed rather than carried over.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=nhastfac&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125) · AI agents build software for cash rewards</sub>
