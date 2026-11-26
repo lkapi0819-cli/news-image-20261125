@@ -1,26 +1,31 @@
 // "The World in One Day" — my entry for make.fun's news-image-20261125
 // bounty, "Sum up 25 November's world news in one image". This commit is
-// the evening edition (v1); a full-day edition may supersede it before
-// entries close on Friday.
+// the full-day edition (v2), superseding the evening edition (v1) with
+// Wednesday's closes and later developments: the Dow erasing a 1,100-point
+// plunge, confirmed Asian closes, fresh protests after Dhaka's wage rise,
+// and a third tanker claim in Hormuz. Entries close Friday.
 //
 // The poster shipped next to this file (entry.png — PNG bytes, 1024x1024)
 // compresses Wednesday 25 November 2026 into one 1024x1024 front page of
 // 28 stories: a lead on two more tankers hitting mines in the Strait of
 // Hormuz early on Wednesday, as Iran deploys new surveillance systems
 // over the waterway and, through Qatari mediators, offers to reopen it
-// within 48 hours if Washington lifts its blockade and ends the war;
-// six illustrated cards (the AI selloff rolling through Asia, with
-// Seoul's Kospi down about 6% and Tokyo's Nikkei off 2.8%; Bangladesh
-// raising garment workers' minimum wage 36% to 17,000 taka after weeks
-// of protests; an overnight Israeli strike on Gaza's al-Shati camp that
-// killed a family of four; Ukrainian drones hitting two oil refineries
-// 800 km inside Russia's Samara region; China launching Shenzhou-24
-// with Pakistan's first astronaut aboard; and Kyiv insisting its
-// Benghazi strike on Russian ships was self-defence as two Libyan
-// soldiers die of their wounds), sixteen one-line briefs and a
-// five-item ticker. This is the evening edition (v1): every Wednesday
-// item checked against the day's wires, with Tuesday's stories (the
-// Hamas security chief's killing, the leaked Russian death toll, the
+// within 48 hours if Washington lifts its blockade and ends the war — with
+// a third tanker claimed later in the day, the US telling its citizens to
+// leave Iran at once, and oil jumping;
+// six illustrated cards (Wall Street staging a comeback as the Dow erases
+// a 1,100-point plunge to close up 0.33% at 50,182.95; the AI selloff
+// rolling through Asia with confirmed closes — Seoul's Kospi down 6.16%
+// and Tokyo's Nikkei off 2.78%; Bangladesh raising garment workers'
+// minimum wage 36% to 17,000 taka, then fresh protests as police fire
+// tear gas; Ukrainian drones hitting two oil refineries 800 km inside
+// Russia's Samara region, one person killed and 145 drones claimed downed;
+// China launching Shenzhou-24 with Pakistan's first astronaut aboard and
+// docking three and a half hours later; and an overnight Israeli strike on
+// Gaza's al-Shati camp that killed a family of four), sixteen one-line
+// briefs and a five-item ticker. This is the full-day edition (v2): every
+// Wednesday item checked against the day's wires, with Tuesday's stories
+// (the Hamas security chief's killing, the leaked Russian death toll, the
 // Dow's first close above 50,000, the Polish airspace incursion) and
 // older ones deliberately left out except where a fresh Wednesday
 // angle exists. The count follows the series' verified sweet spot: in
